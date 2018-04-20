@@ -28,7 +28,7 @@ function deleteTrigger() {
 function querySpreadsheet() {
   // Function checks the spreadsheet to see if there are any that are past due
   
-  // Define the slack webhook
+  // Define the slack webhook, have to go to slack apps https://my.slack.com/services/new/incoming-webhook/
   var SLACK_WEBHOOK_POST_URL = "https://hooks.slack.com/services/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";
   
   // Grab the data from the vendor spreadsheet
