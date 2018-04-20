@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <h1>Test Poll Page</h1>
+    <button onclick="starttrigfunc()"> Start Trigger </button>
+    
+    
+    <script>
+    
+    function starttrigfunc() {
+    google.script.run
+    .withSuccessHandler(function(response){
+    console.log("Running Function 1:")
+    console.log(response);
+    })
+    .withFailureHandler(function(err) {
+    console.log(response);
+    })
+    .createTrigger();
+    
+    }
+    
+    </script>
+    
+    <button onclick="deletetrigfunc()"> Delete Trigger </button>
+    
+    <script>
+    
+    function deletetrigfunc() {
+    google.script.run
+    .withSuccessHandler(function(response){
+    console.log("Running Function 2:")
+    console.log(response);
+    })
+    .withFailureHandler(function(err) {
+    console.log(response);
+    })
+    .deleteTrigger();
+    
+    }
+    
+    </script>
+    
+  </body>
+</html>
+
+
